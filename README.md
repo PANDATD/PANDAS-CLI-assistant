@@ -1,2 +1,2 @@
 # pandassistant
-Desktop assistant 
+Desktop commond-line assistant 
