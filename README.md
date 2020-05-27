@@ -32,8 +32,7 @@ Desktop commond-line pandas  assistant
 <hr>
 
 <p>
-  <ol>
+ <ol>
     <li>Still voice commonds are not suport , we are impementing in future ! </li>
     
-    </ol>
 </p>
