@@ -6,7 +6,9 @@ import subprocess as sub
 import wikipedia as wk
 import requests
 from datetime import datetime 
-
+from login import Login 
+import getpass as gp 
+ 
    
 def dinfo():
     Devloper = 'Mr. Tejas Vinykant Dixit '
@@ -14,18 +16,17 @@ def dinfo():
     GitHub = 'https://www.github.com/pandatd'
     Twitter = 'https://www.twitter.com/panda__td'
     Email = 'tejasdixit17@gmail.com , pandatd@protonmail.com'
-    print('----'*27)
+    
     print ('This app is Devloped by',Devloper,'\n\
     \t\tFolllow us on \n\
     \nInstagram:',Instagram,'\nGitHub:',GitHub,'\nTwitter:',Twitter,'\nEmail',Email)
-    print('----'*27)
     return get_choice()
 
 def sendmail():
     try:
         ob = s.SMTP('smtp.gmail.com',587)
-        mailadd = input('[pandatd]Enter your email\n[you]')
-        password = input('[pandatd] Enter your password \n[you]')
+        mailadd = input('[pandatd]Enter your email\n\n[you]')
+        password = gp.getpass('[pandatd] Enter your password \n\n[you]')
         try:
             ob.starttls()
             print('Esatbish secure connecation ...') 
@@ -33,100 +34,111 @@ def sendmail():
             ob.login(mailadd,password)
             print('Trying to login in...')
             print('Login Sucessfully !')
-            print('----'*27) 
-            resiver = input('[pandatd] Enter risiver email.\n[you]')
-            print('----'*27) 
-            subject = input('[pandatd] Enter Subject for email.\n[you]')
-            print('----'*27) 
-            body = input('[pandatd] Enter Content for email.\n[you]')
-            print('----'*27) 
-            message = "subject :{}\n\nBody:{}".format(subject,body)
+          
+            resiver = input('[pandatd] Enter risiver email.\n\n[you]')
+            
+            subject = input('[pandatd] Enter Subject for email.\n\n[you]')
+            
+            body = input('[pandatd] Enter Content for email.\n\n[you]')
+            
+            message = "subject :{}\n\nBody:{}".format(subject,body) 
             print(message)
-            print('----'*27) 
+           
             ob.sendmail(mailadd,resiver,message)
             ob.quit()
+            
+            print('Email send sucessfully !! ')
             print('Connecation Closed !!')
         except:
-            print('[pandatd]ENTER VALID EMAIL AND PASSWORD ')
+            print('[pandatd] ENTER VALID EMAIL AND PASSWORD ')
     except:
         print('[PANDATD] PLEASE TRY AGAIN LATER,\
-        \n\t AND CHECK INTERNET CONNECATION OR TURN OFF YOUR AEROPLANE MODE')    
-    return get_choice()
+        \n\t AND CHECK INTERNET CONNECATION OR TURN OFF YOUR AEROPLANE MODE') 
+        print('')
 
-def open_app():
-    '''
-    appnm = input('Enter app name to open ')
-    if appnm == 'spotify':
-        sub.Popen('')
-    return open_app()
-    '''
+    return get_choice()
 
 def wiki():
     try:
-        topic = input(" [pandatd] Enter Your Topic-Name   To Search :\n [You]")
-        print('----'*10)
-        print('\n',wk.summary(topic),'\n')
-        print('----'*27)
+        topic = input(" [pandatd] Enter Your Topic-Name   To Search :\n\n [You]")
+        print('\n',wk.summary(topic),'\n')     
     except:
-        print('[PANDATD]PLEASE MUST WRITE QUERY OR, \n \
+        print('[PANDATD] PLEASE MUST WRITE QUERY OR, \n \
         CHECK SPELLING MESTAKES,\n\t PLEASE TRY AGAIN LATER,\
         \n\t AND CHECK INTERNET CONNECATION OR TURN OFF YOUR AEROPLANE MODE ')
-        print('----'*27)            
-        
-        return wiki()
+        print('\n')
+        get = input('[pandatd] Do you want search again if yes press y or press any key ')
+        if get == 'y':
+            return wiki()
+
     return get_choice ()
     
 def search():
     try:
-        print('----'*27)
-        search1 = input('[pandatd] Enter Text What you Have to Search !\n[you]')
-        print('----'*27)
-        search2 = input('[pandatd] Enter Another Text For New Tab  !\n[you]')
-        print('----'*27)
+        search1 = input('[pandatd] Enter Text What you Have to Search !\n\n[you]')
+        print('\n')
         wb.open_new(search1)
-        wb.open_new_tab(search2)
+        print('Tab no 1 :', search1)
+        
     except:
         print('[pandatd] PLEASE CHECK YOUR URL AGAIN,\n \
             CHECK YOUR INTERNET CONNECTION,\n \
             AND TURN OFF YOUR AEROPLANE MODE ')
-        return search()
+        
+        print('\n')
+
+        get = input('[pandatd] Do you want search again if yes press y or press any key ')
+        if get == 'y':
+            return search()       
     return get_choice()
 
 def get_choice():
+
+    show_choice()
+
     try:
-        choice = int(input(" [pandatd] Enter Your choice : \n [You] "))
+        choice = int(input("[pandatd] Enter Your choice : \n\n[You] "))
     except: 
         print(' PLEASE ENTER RIGHT CHOICE NO !')
         return get_choice()
     if choice == 1:
         return wiki()
-    elif choice == 3:
+    elif choice == 2:
         return sendmail()
-    elif choice == 4:
+    elif choice == 3:
         return search()
-    elif choice == 5:
+    elif choice == 4:
         return dinfo()
 
 def show_choice():
+    '''
+    List of Services
+    ''' 
+    print('\n\n')
+    print('1. Search Info from Wikipedia.') 
+    print('2. Send Mail.')
+    print('3. Search On Webbrowser.')
+    print('4. Devloper contact.')
+    print('For exit enter 5 and above no ')
+    print('\n\n')
+
+def welcome():
+   
+    '''
+    welcome message 
+    '''
+
     ct = datetime.now()
     print('')
-    print('----'*27) 
-    print('\t\t\t>>> Welcome to  pandatd''s Desktop Assistant <<< \n')
+    print('\t\t\t\t>>> Welcome to  pandatd''s Desktop Assistant <<< \n')
+    print('\n')
     print('Date:',ct.day,'-',ct.month,'-',ct.year,'\t\t\t\t\t\t\t\t\tTime:',ct.hour,'-',ct.minute,'-',ct.second)
-    if ct.hour >12:
-        print('Good Morning')
-    else :
-        print('Good Night ')
-    print('----'*27) 
-    print('\t\t\t>>> Heare are somethings i can serve for you my lord !! \n ')
-    print('----'*27)
-    print(' \t 1.Search Info from Wikipedia \n \
-        2. open App \n \
-        3. Send Mail \n \
-        4. Search On Webbrowser \n \
-        5. Devloper contact  \n ')
-    print('----'*27) 
-
-if __name__ == "__main__":
-    show_choice()
+    print('\n\n')
+    print('[pandatd] Heare are something servises, I can provide you !! \n ')
+    
+    
+if __name__ == '__main__':
+    
+    Login()
+    welcome()
     get_choice()
