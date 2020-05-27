@@ -33,7 +33,7 @@ Desktop commond-line pandas  assistant
 
 <p>
   <ol>
-    <li>Still voice commonds are not working</li>
-    <li>When you press 2 option it closes the entire program<i> we know that ! </i> </l>
+    <li>Still voice commonds are not suport , we are impementing in future ! </li>
+    
     </ol>
 </p>
