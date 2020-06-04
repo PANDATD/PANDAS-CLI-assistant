@@ -10,3 +10,6 @@ which is build using python version 3.x
 if you want to know more .... 
 about this repo , please click heare 
 http://www.coddersclub.blogspot.com/ 
+
+view the snapshots of this repo .. 
+https://github.com/PANDATD/pandassistant/blob/master/SNAPSHOT.md
