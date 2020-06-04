@@ -1,5 +1,4 @@
 import os 
-import signup as sg 
 import getpass as gp 
 import Account as ac
 import time as t
