@@ -121,7 +121,7 @@ def wiki():
             return wiki()
     return get_choice ()
 
-# end wikipedia message funcation
+# end wikipedia message funcations
 
 #################################
 
