@@ -9,6 +9,7 @@ from datetime import datetime
 from login import Login 
 import getpass as gp 
 import time as t
+import selenium as sel 
 
 
 
@@ -103,7 +104,7 @@ def wiki():
         print('\n')
 
         print('\t',dec,' ')
-        get_ch  = input('[pandatd] Do you want  to save teh output [y | n]\n[you]').lower()
+        get_ch = input('[pandatd] Do you want  to save teh output [y | n]\n[you]').lower()
         if get_ch == 'y' :
             getfnm = input("[pandatd]Type name to save the file : \n[you]")
             f = open (getfnm,'w')
