@@ -11,10 +11,9 @@ if you want to know more ....
 about this repo , please click heare 
 http://www.coddersclub.blogspot.com/ 
 
-<<<<<<< HEAD
+
 View the snapshots of this repo .. 
-https://github.com/PANDATD/pandassistant/blob/master/SNAPSHOT.md
-=======
+
 # Issue Releted Login Then  
 <hr>
 if in case any issue related to login then go to login.py file <br>
@@ -24,4 +23,4 @@ and password = 'your password ' <br>
 # Default Username  and Password 
 usernanme = ' pandatd '<br>
 password = ' 2b||!2b '
->>>>>>> 1dede9013cb53bc43c9387073d5d6642a34e5ff5
+
