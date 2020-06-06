@@ -11,16 +11,28 @@ if you want to know more ....
 about this repo , please click heare 
 http://www.coddersclub.blogspot.com/ 
 
-
-View the snapshots of this repo .. 
+# Features 
+<div>
+<ol>
+  <li> Speed </li>
+  <li> Relibale </li>
+  <description>One script will help to do work faster while your doing programming ..
+  </description>
+</ol>
+  
+<div>
+  
 
 # Issue Releted Login Then  
-
-<hr><i>
-If in case, any issue related to login then go to login.py file <br>
+<div class ='content'>
+<hr>
+<p>
+ If in case, any issue related to login then go to login.py file <br>
 and chane your username = 'your username '<br>
 and password = 'your password ' <br>
-</i><hr>
+ </p>
+ <hr>
+ </div>
 
 # Default Username  and Password 
 
