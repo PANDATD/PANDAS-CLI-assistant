@@ -9,6 +9,7 @@ from datetime import datetime
 from login import Login 
 import getpass as gp 
 import time as t
+import selenium as sel 
 
 
 #################################
@@ -46,6 +47,7 @@ def show_choice():
     print('2. Send Mail.')
     print('3. Search On Webbrowser.')
     print('4. Devloper contact.')
+    print('5. search on Youtube ')
     print('For exit enter 5 and above no ')
     print('\n\n')
    
@@ -73,6 +75,8 @@ def get_choice():
         return search()
     elif choice == 4:
         return dinfo()
+    elif choice == 5:
+        return youtube()
 
    
 
@@ -173,7 +177,18 @@ def search():
 
 #################################
 
+def youtube():
+    try:
+        searchq = input('[pandatd]Enter youtube serach : ')
+        t.sleep(1)
+        print('[pandatd] Opening Youtube within your search! \n')
+        wb.open_new('www.youtube.com/results?search_query='+searchq) 
+    except:
+        print("[pandatd] Unknow Error or try after some time ok ! ")
+    return get_choice()
+    
 # Devloper contact 
+
 
 def dinfo():
     Devloper = 'Mr. Tejas Vinykant Dixit '
