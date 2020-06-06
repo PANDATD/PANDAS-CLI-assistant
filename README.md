@@ -12,12 +12,12 @@ about this repo , please click heare
 http://www.coddersclub.blogspot.com/ 
 
 # Features 
+ <description>One script will help to do work faster while your doing programming ..! </description>
 <div>
 <ol>
   <li> Speed </li>
   <li> Relibale </li>
-  <description>One script will help to do work faster while your doing programming ..
-  </description>
+ 
 </ol>
   
 <div>
