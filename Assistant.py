@@ -11,6 +11,7 @@ import getpass as gp
 import time as t
 
 
+
 #################################
 
 # start of welcome mesage  funcation 
@@ -46,7 +47,8 @@ def show_choice():
     print('2. Send Mail.')
     print('3. Search On Webbrowser.')
     print('4. Devloper contact.')
-    print('For exit enter 5 and above no ')
+    print('5. search on Youtube ')
+    print('For exit enter 6 and above no ')
     print('\n\n')
    
     
@@ -63,7 +65,7 @@ def get_choice():
     try:
         choice = int(input("[pandatd] Enter Your choice : \n\n"))
     except: 
-        print(' PLEASE ENTER RIGHT CHOICE NO !')
+        print('[pandatd] PLEASE ENTER RIGHT CHOICE NO !')
         return get_choice()
     if choice == 1:
         return wiki()
@@ -73,6 +75,8 @@ def get_choice():
         return search()
     elif choice == 4:
         return dinfo()
+    elif choice == 5:
+        return youtube()
 
    
 
@@ -87,16 +91,33 @@ def wiki():
     try:
         topic = input(" [pandatd] Enter Your Topic-Name   To Search :\n\n [You]").lower()
         print(' [pandatd] You Enterd this topic : ',topic)
-        print('\n',wk.summary(topic),'\n')     
+        print('\n')
+        print("[pandatd] Releted searches are : \n")
+        result = wk.search(topic)
+
+        i = 1
+        for results  in result :
+            print (i ,' | ',results )
+            i = i+1 
+        dec = wk.summary(topic)
+        print('\n')
+
+        print('\t',dec,' ')
+        get_ch  = input('[pandatd] Do you want  to save teh output [y | n]\n[you]').lower()
+        if get_ch == 'y' :
+            getfnm = input("[pandatd]Type name to save the file : \n[you]")
+            f = open (getfnm,'w')
+            dec = wk.summary(topic)
+            f.write(dec)
+            f.close()    
     except:
         print('[PANDATD] PLEASE MUST WRITE QUERY OR, \n \
         CHECK SPELLING MESTAKES,\n\t PLEASE TRY AGAIN LATER,\
         \n\t AND CHECK INTERNET CONNECATION OR TURN OFF YOUR AEROPLANE MODE ')
         print('\n')
-        get = input('[pandatd] Do you want search again if yes press y or press any key ')
+        get = input('[pandatd] Do you want search again if yes press y or press any key :\n[you]')
         if get == 'y':
             return wiki()
-        
     return get_choice ()
 
 # end wikipedia message funcation
@@ -154,8 +175,10 @@ def search():
     try:
         search1 = input('[pandatd] Enter Text What you Have to Search !\n\n[you]')
         print('\n')
-        wb.open_new(search1)
         print('Tab no 1 :', search1)
+        t.sleep(0.1)
+        wb.open_new('https://www.google.com/search?q='+search1)
+
         
     except:
         print('[pandatd] PLEASE CHECK YOUR URL AGAIN,\n \
@@ -173,7 +196,18 @@ def search():
 
 #################################
 
+def youtube():
+    try:
+        searchq = input('[pandatd]Enter youtube serach : ')
+        t.sleep(1)
+        print('[pandatd] Opening Youtube within your search! \n')
+        wb.open_new('www.youtube.com/results?search_query='+searchq) 
+    except:
+        print("[pandatd] Unknow Error or try after some time ok ! ")
+    return get_choice()
+    
 # Devloper contact 
+
 
 def dinfo():
     Devloper = 'Mr. Tejas Vinykant Dixit '
