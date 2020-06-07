@@ -35,6 +35,8 @@ http://www.coddersclub.blogspot.com/
  <hr>
  </div>
 
+ <hr>
+
 # How to change username and password 
 
 First you have to open Accoount.py 
@@ -53,6 +55,8 @@ To use this assistant , Follow the folllowing steps ;-
     <li>after cloning the repo , Search the Assistant.py and run using python3 Assistant.py </li>
     <li>Then Type username and password .</li>
 </ol>
+
+<hr>
 
 <div class='image'>
   
