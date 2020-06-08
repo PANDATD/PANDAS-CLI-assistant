@@ -1,19 +1,4 @@
-# imported all lib 
-import webbrowser as wb
-import os
-import sys 
-import smtplib as s 
-import wikipedia as wk
-import requests
-from datetime import datetime 
-from login import Login 
-import getpass as gp 
-import time as t
-import selenium as sel 
-
-
-
-#################################
+###### FUNACATIONS ######
 
 # start of welcome mesage  funcation 
 def welcome():
@@ -28,14 +13,11 @@ def welcome():
     print('\n\n')
     print('[pandatd] Heare are some servises, I can provide you !! \n ')
     
-   
-
 # end of welcome mesage Funcation 
 
-#################################
+#-------------------------------------------------------------------------------------------------------------------------
 
-# start of show choice 
-
+# START SHOW FUNCATION  
 
 def show_choice():
     
@@ -51,13 +33,13 @@ def show_choice():
     print('5. search on Youtube ')
     print('For exit enter 6 and above no ')
     print('\n\n')
-   
-    
 
-#################################
+#   END SHOW FUNCATION 
 
-# start of getting choice funcation 
 
+#-------------------------------------------------------------------------------------------------------------------------
+
+# START OF GET CHOICE FUNCATION  
 
 def get_choice():
 
@@ -79,13 +61,11 @@ def get_choice():
     elif choice == 5:
         return youtube()
 
-   
+# END OF GET CHOICE FUNCATION 
 
-# end of get choice funcation 
+#-------------------------------------------------------------------------------------------------------------------------
 
-#################################
-
-# start wikipedia message funcation 
+# START WIKIPEDIA FUUNCATION
 
 def wiki():
     
@@ -121,11 +101,11 @@ def wiki():
             return wiki()
     return get_choice ()
 
-# end wikipedia message funcations
+# END OF WIKIPEDIA FUNCATION
 
-#################################
+#-------------------------------------------------------------------------------------------------------------------------
 
-# start email Funcation 
+# START OF SENDNAIL FUNCATION  
 
 def sendmail():
 
@@ -165,11 +145,11 @@ def sendmail():
 
     return get_choice()
 
-# End mail funcation 
+# END MAIL FUNCATION
 
-#################################
+#-------------------------------------------------------------------------------------------------------------------------
 
-# start search Function 
+# START SEARCH FUNCATION
 
 def search():
 
@@ -193,11 +173,11 @@ def search():
             return search()       
     return get_choice()
 
-# end of search Funcation 
+# END OF SEARCH FUNCATION  
 
-#################################
+#-------------------------------------------------------------------------------------------------------------------------
 
-# start youtube funcation
+# START YOUTUBE FUNCATION 
 
 def youtube():
     try:
@@ -209,11 +189,11 @@ def youtube():
         print("[pandatd] Unknow Error or try after some time ok ! ")
     return get_choice()
 
-# end youtube funcation 
+# END OF YOUTUBE FUNCATION 
 
-#################################
+#-------------------------------------------------------------------------------------------------------------------------
    
-# Devloper contact 
+# DEVLOPER FINCATION 
 
 
 def dinfo():
@@ -229,15 +209,13 @@ def dinfo():
     return get_choice()
 
     
-# end Devloper contact 
+# END OF DEVLOPER FUNCATION
 
-#################################
+#-------------------------------------------------------------------------------------------------------------------------
 
-# main 
-if __name__ == '__main__':
-    
-    Login()
-    welcome()
-    get_choice()
 
-# end main 
+
+
+
+
+
