@@ -1,3 +1,14 @@
+import webbrowser as wb
+import os
+import sys 
+import smtplib as s 
+import wikipedia as wk
+from datetime import datetime 
+from login import Login 
+import getpass as gp 
+import time as t
+
+
 ###### FUNACATIONS ######
 
 # start of welcome mesage  funcation 
@@ -212,10 +223,3 @@ def dinfo():
 # END OF DEVLOPER FUNCATION
 
 #-------------------------------------------------------------------------------------------------------------------------
-
-
-
-
-
-
-
