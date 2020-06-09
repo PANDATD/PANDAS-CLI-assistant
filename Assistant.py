@@ -22,7 +22,7 @@ def welcome():
     print('\n')
     print('Date:',ct.day,'-',ct.month,'-',ct.year,'\t\t\t\t\t\t\t\t\tTime:',ct.hour,'-',ct.minute,'-',ct.second)
     print('\n\n')
-    print('[pandatd] Heare are some servises, I can provide you !! \n ')
+    print('[pandatd] Hey i provide  some servises, but you have to log in must  !! \n ')
     
 # end of welcome mesage Funcation 
 
@@ -53,8 +53,10 @@ def show_choice():
 # START OF GET CHOICE FUNCATION  
 
 def get_choice():
-
+    
     show_choice()
+    t.sleep(2)
+    
 
     try:
         choice = int(input("[pandatd] Enter Your choice : \n\n"))
@@ -79,7 +81,7 @@ def get_choice():
 # START WIKIPEDIA FUUNCATION
 
 def wiki():
-    
+    clear()
     try:
         topic = input(" [pandatd] Enter Your Topic-Name   To Search :\n\n [You]").lower()
         print(' [pandatd] You Enterd this topic : ',topic)
@@ -119,9 +121,10 @@ def wiki():
 # START OF SENDNAIL FUNCATION  
 
 def sendmail():
-
+    clear()
+    print('Wait for some time ...! ')
     try:
-        ob = s.SMTP('smtp.gmail.com',587)
+        ob = s.SMTP('smtp.gmail.com',587) 
         mailadd = input('[pandatd]Enter your email\n\n[you]').lower()
         password = gp.getpass('[pandatd] Enter your password \n\n[you]')
        
@@ -163,7 +166,7 @@ def sendmail():
 # START SEARCH FUNCATION
 
 def search():
-
+    clear()
     try:
         search1 = input('[pandatd] Enter Text What you Have to Search !\n\n[you]')
         print('\n')
@@ -191,6 +194,7 @@ def search():
 # START YOUTUBE FUNCATION 
 
 def youtube():
+    clear()
     try:
         searchq = input('[pandatd]Enter youtube serach : ')
         t.sleep(1)
@@ -208,6 +212,7 @@ def youtube():
 
 
 def dinfo():
+    clear()
     Devloper = 'Mr. Tejas Vinykant Dixit '
     Instagram = 'https://www.instagram.com/_pandatd '
     GitHub = 'https://www.github.com/pandatd'
@@ -223,3 +228,19 @@ def dinfo():
 # END OF DEVLOPER FUNCATION
 
 #-------------------------------------------------------------------------------------------------------------------------
+# import only system from os 
+from os import system, name 
+
+# import sleep to show output for some time period 
+from time import sleep 
+
+# define our clear function 
+def clear(): 
+
+	# for windows 
+	if name == 'nt': 
+		_ = system('cls') 
+
+	# for mac and linux(here, os.name is 'posix') 
+	else: 
+		_ = system('clear') 
