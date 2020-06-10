@@ -36,7 +36,7 @@ which is build using python version 3
 
 # How to use assistant ?
 
-**To use this assistant , Follow the following steps :- **
+ To use this assistant , Follow the following steps :- 
 
 
 * You need to Download /clone this repository 
