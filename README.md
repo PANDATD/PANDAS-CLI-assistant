@@ -33,7 +33,6 @@ which is build using python version 3
 
 ***
 
-
 # How to use assistant ?
 
  To use this assistant , Follow the following steps :- 
@@ -46,8 +45,3 @@ which is build using python version 3
 
 
 ***
-
-  
-![first](https://user-images.githubusercontent.com/50815912/82816482-dac90680-9eb8-11ea-8dc4-0a9de9b151e2.png)
-
-
