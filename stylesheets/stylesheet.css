@@ -1,6 +1,9 @@
 * {
   box-sizing: border-box; }
-
+p{
+font-family: 'Roboto', sans-serif;
+font-size: medium;
+}
 body {
   padding: 0;
   margin: 0;
