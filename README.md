@@ -1,5 +1,5 @@
 # Welcome to the 
-## _pandas-assistant_  !
+## PANDAS-CLI-assistant !
 
 ***
 
