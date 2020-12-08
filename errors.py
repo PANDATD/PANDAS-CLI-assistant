@@ -18,7 +18,7 @@ def UnknowError():
     return print(error)
 
 def offlineError():
-    error = f """
+    error = f"""
     {assistant_name}
             Hey there, please check your internet connecation 
             
@@ -27,5 +27,3 @@ def offlineError():
                 2) Replug the ethernet cable
                 """
     return print(error)
-
-offlineError()
