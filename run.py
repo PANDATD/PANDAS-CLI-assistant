@@ -1,3 +1,4 @@
+#!/usr/bin/env python3.9 
 ######## IMPOTED ALL LIBERRIES ######### 
 from login import Login 
 from Assistant import  welcome , get_choice ,clear
