@@ -9,6 +9,7 @@ assistant_name = "PANDA"
 
 def show_choice():
     clear()
+    
     show_ch = """
     --------------- SERVICES BY PANDA-CLI-Assistant --------------
     NOTE :- 
