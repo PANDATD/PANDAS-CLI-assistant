@@ -9,7 +9,6 @@ assistant_name = "PANDA"
 
 def show_choice():
     clear()
-    
     show_ch = """
     --------------- SERVICES BY PANDA-CLI-Assistant --------------
     NOTE :- 
@@ -41,13 +40,10 @@ def show_choice():
 def get_choice():
     
     show_choice()
-    t.sleep(2)
-    
-
     try:
-        choice = int(input("[pandatd] Enter Your choice : \n\n"))
+        choice = int(input(f"[{assistant_name}]Enter Your choice : \n\n"))
     except: 
-        print('[pandatd] PLEASE ENTER RIGHT CHOICE NO !')
+       
         return get_choice()
     if choice == 1:
         return wiki()
