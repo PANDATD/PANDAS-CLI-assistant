@@ -1,49 +1,34 @@
 import webbrowser as wb
-import os
-import sys 
-import smtplib as s 
 import wikipedia as wk
-from datetime import datetime 
+import os
+import smtplib as s 
 from login import Login 
 import getpass as gp 
-import time as t
 
-
-###### FUNACATIONS ######
-
-# start of welcome mesage  funcation 
-def welcome():
-    '''
-    welcome message 
-    '''
-    ct = datetime.now()
-    print('')
-    print('\t\t\t\t>>> Welcome to  pandatd''s Desktop Assistant <<< \n')
-    print('\n')
-    print('Date:',ct.day,'-',ct.month,'-',ct.year,'\t\t\t\t\t\t\t\t\tTime:',ct.hour,'-',ct.minute,'-',ct.second)
-    print('\n\n')
-    print('[pandatd] Hey i provide  some servises, but you have to log in must  !! \n ')
-    
-# end of welcome mesage Funcation 
-
-#-------------------------------------------------------------------------------------------------------------------------
-
-# START SHOW FUNCATION  
+assistant_name = "PANDA"
 
 def show_choice():
-    
-    '''
-    List of Services
-    ''' 
+    clear()
+    show_ch = """
+    --------------- SERVICES BY PANDA-CLI-Assistant --------------
+    NOTE :- 
+        
+        1) Enter the service no you want to execte.
 
-    print('\n\n')
-    print('1. Search Info from Wikipedia.') 
-    print('2. Send Mail.')
-    print('3. Search On Webbrowser.')
-    print('4. Devloper contact.')
-    print('5. search on Youtube ')
-    print('For exit enter 6 and above no ')
-    print('\n\n')
+    SERVICES :- 
+
+        1)Browsing 
+        2)Wikipedia 
+        3)You-Tube 
+        4)Email
+        5)Devloper Guide 
+        6)Exit from 
+
+    -------------------------------------------------------------------
+
+              """
+    print(show_ch)
+        
 
 #   END SHOW FUNCATION 
 
