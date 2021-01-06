@@ -12,7 +12,7 @@ which is build using python version 3.x <br>
  --- 
 > # How to use assistant ?
 
-? ## To use this assistant , Follow the following steps :- 
+ >> ## To use this assistant , Follow the following steps :- 
 
 * You need to Download /clone this repository 
 * after cloning the repo , Search the `run.sh  file for mac and linux users`and run `./run.sh`.
