@@ -1,38 +1,28 @@
-# Welcome to the 
-## PANDAS-CLI-assistant !
+# PANDAS-CLI-Assistant
 
-***
-
-# pandassistant
-
-Desktop command line Desktop Assistant, known as PANDA 
-
+Desktop command line Desktop Assistant, known as PANDA, 
 This repo is helps you work done faster 
-which is build using python version 3 
+which is build using python version 3.x
 
 # Features
 
-***
-
-  > **One script will help to do work faster while your doing programming ..!** 
+> One script will help to do work faster while your doing programming ..!
 
 * Reliable
 * Easy to use 
 * Faster 
   
-
-
 # How to use assistant ?
 
-**To use this assistant , Follow the following steps :- **
-
+To use this assistant , Follow the following steps :- 
 
 * You need to Download /clone this repository 
-* after cloning the repo , Search the `run.py `.
-* and run using `python3 Assistant.py`  
+* after cloning the repo , Search the `run.sh  file for mac and linux users`.
+* if you are using windows you find the file requirment.txt after the run the following commond
+` pip install -r requirments.txt `
+  and type `python3 main.py` file on cmd or powershell 
 ***
 
   
-![first](https://user-images.githubusercontent.com/50815912/82816482-dac90680-9eb8-11ea-8dc4-0a9de9b151e2.png)
 
 
