@@ -1,4 +1,3 @@
-! [alt] (https://unsplash.com/photos/2EJCSULRwC8)
 
 Desktop command line Desktop Assistant, known as PANDA, 
 This repo is helps you work done faster 
