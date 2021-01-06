@@ -1,6 +1,4 @@
-# Welcome 
-
-![alt] []
+! [alt] (https://unsplash.com/photos/2EJCSULRwC8)
 
 Desktop command line Desktop Assistant, known as PANDA, 
 This repo is helps you work done faster 
@@ -8,12 +6,14 @@ which is build using python version 3.x
 
 # Features
 
-> One script will help to do work faster while your doing programming ..!
+
+ ## One script will help to do work faster while your doing programming ..!
+
 
 * Reliable
 * Easy to use 
 * Faster 
-  
+ --- 
 # How to use assistant ?
 
 To use this assistant , Follow the following steps :- 
