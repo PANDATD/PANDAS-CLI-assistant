@@ -1,5 +1,5 @@
 # Intro 
-![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
+![Image of Assistant ](https://unsplash.com/photos/HuE1cJo-x34)
 
    Desktop command line Desktop Assistant, known as PANDA,<br>
     This repo is helps you work done faster <br>
