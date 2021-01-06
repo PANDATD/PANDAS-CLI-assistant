@@ -3,13 +3,10 @@
 __Desktop command line Desktop Assistant, known as PANDA,<br>
 This repo is helps you work done faster <br>
 which is build using python version 3.x__ <br>
-
+---
 # Features
 
-
- ## One script will help to do work faster while your doing programming ..!
-
-
+* One script will help to do work faster while your doing programming ..!
 * Reliable
 * Easy to use 
 * Faster 
