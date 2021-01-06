@@ -1,13 +1,11 @@
 import webbrowser as wb
 import wikipedia as wk 
-from os import system, name 
+from os import system,name 
 from time import sleep 
-import smtplib as s 
-from login import Login 
+import smtplib as s  
 import getpass as gp 
 import errors as e
 import pyfiglet 
-  
 
 assistant_name = "[PANDA]"
 
@@ -36,7 +34,8 @@ def show_choice():
               """
              
     print(show_ch)
-        
+
+
 def get_choice():
     show_choice()
     try:
@@ -56,6 +55,7 @@ def get_choice():
         return dinfo()
     else:
        return e.incorrectChoiceError()
+
 
 def wiki():
     clear()
@@ -82,14 +82,12 @@ def wiki():
             f.write(dec)
             f.close()    
     except:
-        print(f'{assistant_name} PLEASE MUST WRITE QUERY OR, \n \
-        CHECK SPELLING MESTAKES,\n\t PLEASE TRY AGAIN LATER,\
-        \n\t AND CHECK INTERNET CONNECATION OR TURN OFF YOUR AEROPLANE MODE ')
-        print('\n')
+        print
         get = input(f'{assistant_name} Do you want search again if yes press y or press any key :\n[you]')
         if get == 'y':
             return wiki()
     return get_choice ()
+
 
 def sendmail():
     clear()
@@ -124,11 +122,13 @@ def sendmail():
         except:
             print(f'{assistant_name} ENTER VALID EMAIL AND PASSWORD ')
     except:
+        return e.UnknowError() 
         print(f'{assistant_name} PLEASE TRY AGAIN LATER,\
         \n\t AND CHECK INTERNET CONNECATION OR TURN OFF YOUR AEROPLANE MODE') 
         print('')
 
     return get_choice()
+
 
 def Browsing():
     choice_list =f"""
@@ -161,6 +161,7 @@ def Browsing():
     else:
         return get_choice()
 
+
 def youtube():
     clear()
     try:
@@ -172,24 +173,32 @@ def youtube():
         print(f"{assistant_name} Unknow Error or try after some time ok ! ")
     return get_choice()
 
+
 def dinfo():
-    clear()
-    Devloper = 'Mr. Tejas Vinykant Dixit '
-    Instagram = 'https://www.instagram.com/_pandatd '
-    GitHub = 'https://www.github.com/pandatd'
-    Twitter = 'https://www.twitter.com/panda__td'
-    Email = 'tejasdixit17@gmail.com , pandatd@protonmail.com'
+    info ="""
+    -------------------------------------------------------------------
+                    Devloper Info 
+    -------------------------------------------------------------------
+    Devloper = Mr. Tejas Vinykant Dixit 
+    Instagram = https://www.instagram.com/_pandatd 
+    GitHub = https://www.github.com/pandatd
+    Twitter = https://www.twitter.com/panda__td
+    Email = tejasdixit17@gmail.com , pandatd@protonmail.com
+    -------------------------------------------------------------------
+    WHO IM I :)
+            Hey there,
+            im highly python and linux enthusiast 
+            who really likes to code in python 
+     -------------------------------------------------------------------        
+    """
+    print(info)
     
-    print ('This app is Devloped by',Devloper,'\n\
-    \t\tFolllow us on \n\
-    \nInstagram:',Instagram,'\nGitHub:',GitHub,'\nTwitter:',Twitter,'\nEmail',Email)
-    return get_choice()
  
 def clear(): 
 	if name == 'nt': 
-        t.sleep(1)
+        
 		_ = system('cls') 
 	# for mac and linux(here, os.name is 'posix') 
 	else: 
-        t.sleep(1)
+        
 		_ = system('clear') 

@@ -1,4 +1,3 @@
-#!/usr/bin/env python3.9
 assistant_name= "[PANDA]"
 def incorrectChoiceError():
     error = f"""
