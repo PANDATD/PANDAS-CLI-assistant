@@ -1,7 +1,8 @@
+# Intro 
 
-Desktop command line Desktop Assistant, known as PANDA, 
+__Desktop command line Desktop Assistant, known as PANDA, 
 This repo is helps you work done faster 
-which is build using python version 3.x
+which is build using python version 3.x__
 
 # Features
 
