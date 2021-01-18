@@ -18,5 +18,5 @@ which is build using python version 3.x <br>
 * after cloning the repo , Search the `run.sh  file for mac and linux users`and run `./run.sh`.
 * if you are using windows you find the file requirment.txt after the run the following commond
 ` pip install -r requirments.txt `
-  and type ```python python3 main.py``` file on cmd or powershell 
+  and type ```python: python3 main.py```  file on cmd or powershell 
 
