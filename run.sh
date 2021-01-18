@@ -1,4 +1,4 @@
-#!/usr/bin/bash 
+#!/bin/bash 
 echo "checking updates if any updates we will update it "
 echo "Installing requiered dependancies "
 pip3 install -r requirements.txt 
