@@ -6,4 +6,4 @@ echo "install required depndancies"
 clear 
 echo "Resolved depndancies"
 echo "executing pandas assistant ."
-./main.py 
+python3 main.py 

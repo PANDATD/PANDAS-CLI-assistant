@@ -14,7 +14,6 @@ def show_choice():
     result = pyfiglet.figlet_format("PANDA-CLI-Assistant",font="slant") 
     show_ch =f"""
     -------------------- SERVICES BY PANDA-CLI-Assistant --------------
-    
     {result}
     -By Mr.Tejas Dixit 
     -------------------------------------------------------------------
@@ -29,10 +28,8 @@ def show_choice():
         4)Email
         5)Devloper Guide 
         6)Exit from 
-    -------------------------------------------------------------------
-
-              """
-             
+    ------------------------------------------------------------------- 
+    """        
     print(show_ch)
 
 
