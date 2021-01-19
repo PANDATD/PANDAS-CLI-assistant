@@ -21,3 +21,5 @@ which is build using python version 3.x <br>
   and type ```python3 main.py```
   file on cmd or powershell 
   and your able to *use pandas-cli-assistant 
+## Release 
+* **![Release](https://github.com/PANDATD/PANDAS-CLI-assistant/releases/tag/v1.02)**
