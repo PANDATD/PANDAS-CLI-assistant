@@ -71,8 +71,8 @@ def wiki():
         print('\n')
 
         print('\t',dec,' ')
-        get_ch = input(f'{assistant_name} Do you want  to save teh output [y | n]\n[you]').lower()
-        if get_ch == 'y' :
+        get_ch = input(f'{assistant_name} Do you want  to save the output [y | n]\n[you]').lower()
+        if get_ch == 'y' : 
             getfnm = input(f"{assistant_name}Type name to save the file : \n[you]")
             f = open (getfnm,'w')
             dec = wk.summary(topic)
