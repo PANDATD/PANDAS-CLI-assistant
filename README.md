@@ -1,25 +1,29 @@
-> # Intro 
+# PANDAS CLI Assistant
 
-Desktop command line Desktop Assistant, known as PANDA,<br>
-This repo is helps you work done faster <br>
-which is build using python version 3.x <br>
+A Python command-line assistant project for experimenting with programming utilities and CLI workflows.
 
-* One script will help to do work faster while your doing programming ..!
-* Reliable
-* Easy to use 
-* Faster 
+## Run
 
- --- 
-> # How to use assistant ?
+Clone the repository and inspect the available scripts before running them.
 
- >> ## To use this assistant , Follow the following steps :- 
+Linux/macOS:
 
-* You need to Download /clone this repository 
-* after cloning the repo , Search the run.sh  file for mac and linux users and run ```./run.sh```
-* if you are using windows you find the file requirment.txt after the run the following commond
-` pip install -r requirments.txt `
-  and type ```python3 main.py```
-  file on cmd or powershell 
-  and your able to *use pandas-cli-assistant 
-## Release 
-* **![Release](https://github.com/PANDATD/PANDAS-CLI-assistant/releases/tag/v1.02)**
+```bash
+./run.sh
+```
+
+Python:
+
+```bash
+python3 main.py
+```
+
+Install the dependencies listed by the repository before running the application.
+
+## Repository
+
+https://github.com/PANDATD/PANDAS-CLI-assistant
+
+## Author
+
+https://tejasdixit.in
